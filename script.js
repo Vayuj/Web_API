@@ -4,7 +4,7 @@ async function getWeather(latlng){
     var lat = latlng[0];
     var lng = latlng[1];
     
-    var weather = await fetch("http://api.openweathermap.org/data/2.5/weather?lat="+ lat + "&lon=" + lng + "&appid=6cc3a417d5ec4b023721b7f64a3c4ac0");
+    var weather = await fetch("https://api.openweathermap.org/data/2.5/weather?lat="+ lat + "&lon=" + lng + "&appid=6cc3a417d5ec4b023721b7f64a3c4ac0");
     
     var data = await weather.json();
     
